@@ -1,0 +1,20 @@
+html, body{
+    margin:0;
+    padding:0;
+}
+#wrap{
+    min-height: 100vh;
+    position:relative;
+    width:100%;
+}
+section{
+    padding-bottom: 110px;
+}
+footer{
+    background-color: #cec9c9;
+    width:100%;
+    height:110px;
+    bottom:0px;
+    position:absolute;
+    text-align: center;
+}
