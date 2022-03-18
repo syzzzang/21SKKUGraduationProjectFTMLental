@@ -1,0 +1,16 @@
+version: '3.7'
+services:
+  soyoung-grad-jpa-mysql:
+    image: mysql:8.0
+    restart: always
+    environment:
+      - MYSQL_USER=soyoung
+      - MYSQL_PASSWORD=soyoung
+      - MYSQL_ROOT_PASSWORD=soyoung
+      - MYSQL_DATABASE=grad
+    ports:
+      - 43306:3306
+  soyoung-grad-redis:
+    image: redis:6.0.5
+    ports:
+      - 46379:6379

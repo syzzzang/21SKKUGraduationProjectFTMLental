@@ -1,0 +1,18 @@
+server:
+  port: 48080
+
+spring:
+  jpa:
+    database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
+    hibernate:
+      ddl-auto: update
+    generate-ddl: false
+    show-sql: false
+  datasource:
+    url: jdbc:mysql://localhost:43306/grad
+    username: soyoung
+    password: soyoung
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  redis:
+    host: localhost
+    port: 46379
